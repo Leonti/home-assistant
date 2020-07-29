@@ -1,0 +1,30 @@
+{
+    "data": {
+        "config": {
+            "views": [
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entity": "switch.s20",
+                            "hold_action": {
+                                "action": "more-info"
+                            },
+                            "icon": "hass:lightbulb",
+                            "name": "Light",
+                            "show_icon": true,
+                            "show_name": false,
+                            "tap_action": {
+                                "action": "toggle"
+                            },
+                            "type": "button"
+                        }
+                    ],
+                    "panel": true
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
+}
