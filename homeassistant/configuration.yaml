@@ -1,5 +1,8 @@
-lovelace:  
-  mode: yaml
+#lovelace:  
+#  mode: yaml
+
+logger:
+  default: debug  
 
 # Text to speech
 tts:
