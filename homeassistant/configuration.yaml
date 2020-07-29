@@ -1,12 +1,10 @@
-#lovelace:  
-#  mode: yaml
+default_config:
+
+lovelace:  
+  mode: yaml
 
 logger:
-  default: debug  
-
-# Text to speech
-tts:
-  - platform: google_translate
+  default: debug
 
 mqtt:  
   broker: mqtt
