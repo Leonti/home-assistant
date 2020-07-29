@@ -1,7 +1,7 @@
 default_config:
 
-lovelace:  
-  mode: yaml
+#lovelace:  
+#  mode: yaml
 
 logger:
   default: debug
@@ -20,4 +20,15 @@ switch:
     payload_off: 0
 
 shell_command:
-  light_on: python3 /lights/lights.py  
+  - light_on: python3 /lights/lights_on.py
+  - light_off: python3 /lights/lights_off.py 
+
+script:
+  lights_on:
+    alias: 'Turn the lights on'
+    sequence:
+      service: shell_command.light_on
+  lights_off:
+    alias: 'Turn the lights off'
+    sequence:
+      service: shell_command.light_off        
