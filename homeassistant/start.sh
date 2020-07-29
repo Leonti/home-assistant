@@ -3,7 +3,7 @@
 cp /tmp/sense.yaml /config/sense.yaml
 cp /tmp/sensors.sh /config/sensors.sh
 cp /tmp/lovelace.sh /config/lovelace.sh
-cp /tmp/configuration.yaml /config/configuration.yaml
+#cp /tmp/configuration.yaml /config/configuration.yaml
 
 chmod +x /config/sensors.sh
 chmod +x /config/lovelace.sh

@@ -27,3 +27,6 @@ default_config:
       command_topic: s20/relay/0/set
       payload_on: 1
       payload_off: 0
+
+  shell_command:
+    light_on: python3 /lights/lights.py      
