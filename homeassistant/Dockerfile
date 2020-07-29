@@ -7,6 +7,9 @@ COPY lovelace.sh /tmp/lovelace.sh
 COPY sensors.sh /tmp/sensors.sh
 COPY start.sh /tmp/start.sh
 
+COPY lights /lights
+RUN pip3 install -r /lights/requirements.txt
+
 RUN chmod +x /tmp/start.sh
 
 CMD ["bash","/tmp/start.sh"]
