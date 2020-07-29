@@ -1,10 +1,7 @@
-FROM homeassistant/raspberrypi3-homeassistant:stable
+FROM homeassistant/raspberrypi3-homeassistant:0.113.2
 
-COPY sense.yaml /tmp/sense.yaml
 COPY ui-lovelace.yaml /tmp/ui-lovelace.yaml
-#COPY configuration.yaml /tmp/configuration.yaml
-COPY lovelace.sh /tmp/lovelace.sh
-COPY sensors.sh /tmp/sensors.sh
+COPY configuration.yaml /tmp/configuration.yaml
 COPY start.sh /tmp/start.sh
 
 COPY lights /lights

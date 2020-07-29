@@ -1,13 +1,6 @@
 #!/bin/bash
 
-cp /tmp/sense.yaml /config/sense.yaml
-cp /tmp/sensors.sh /config/sensors.sh
-cp /tmp/lovelace.sh /config/lovelace.sh
-#cp /tmp/configuration.yaml /config/configuration.yaml
-
-chmod +x /config/sensors.sh
-chmod +x /config/lovelace.sh
-
-#if [ ! -f /config/ui-lovelace.yaml ]; then cp /tmp/ui-lovelace.yaml /config/ui-lovelace.yaml; fi 
+cp /tmp/configuration.yaml /config/configuration.yaml
+cp /tmp/ui-lovelace.yaml /config/ui-lovelace.yaml
 
 python -m homeassistant --config /config
